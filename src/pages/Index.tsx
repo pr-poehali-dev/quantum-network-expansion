@@ -2,6 +2,7 @@ import { useState } from "react"
 import NeonBackground from "@/components/NeonBackground"
 import Header from "@/components/Header"
 import HeroContent from "@/components/HeroContent"
+import PortfolioSection from "@/components/PortfolioSection"
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -11,6 +12,7 @@ export default function Index() {
       <NeonBackground />
       <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <HeroContent />
+      <PortfolioSection />
     </div>
   )
 }
